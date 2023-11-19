@@ -71,11 +71,18 @@ gitclone https://github.com/windsywinds/mission2.git
 npm i
 ```
 
-3. Run dev server
+3. create .env file and add your Azure variables
+
+```sh
+VITE_API_KEY=
+VITE_ENDPOINT_NAME=
+```
+4. Run dev server
 
 ```sh
 npm run dev
 ```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
