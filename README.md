@@ -1,4 +1,3 @@
-
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -6,12 +5,9 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-
-
-
 <br />
 <div align="center">
- 
+
 
 <h3 align="center">Mission 2</h3>
 
@@ -27,8 +23,6 @@
     ·
     
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -49,47 +43,45 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 An API that can be called to analyse an image of a car and return a description of the vehicle.
 
-
-
-
 ### Built With
 
-* React JS
-* Tailwind CSS
-* Microsoft Azure
-
+- React JS
+- Tailwind CSS
+- Microsoft Azure
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Installation
 
 1. Clone repo
-  ```sh
-  gitclone https://github.com/windsywinds/mission2.git
-  ```
-2. Install packages 
-  ```sh
-  npm i
-  ```
-3. Run dev server
-  ```sh
-  npm run dev
-  ```
 
+```sh
+gitclone https://github.com/windsywinds/mission2.git
+```
+
+2. Install packages
+
+```sh
+npm i
+```
+
+3. Run dev server
+
+```sh
+npm run dev
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [vite-url]: https://vitejs.dev/
 [contributors-shield]: https://img.shields.io/github/contributors/windsywinds/mission2.svg?style=for-the-badge
 [contributors-url]: https://github.com/windsywinds/mission2/graphs/contributors
@@ -120,4 +112,4 @@ An API that can be called to analyse an image of a car and return a description 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com
