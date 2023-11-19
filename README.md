@@ -71,7 +71,7 @@ gitclone https://github.com/windsywinds/mission2.git
 npm i
 ```
 
-3. create .env file and add your Azure variables
+3. Create .env file and add your Azure variables
 
 ```sh
 VITE_API_KEY=
