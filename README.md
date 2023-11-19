@@ -62,9 +62,8 @@ An API that can be called to analyse an image of a car and return a description 
 ### Built With
 
 * React JS
-* Express JS
 * Tailwind CSS
-* Jest testing library with Supertest
+* Microsoft Azure
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -79,14 +78,11 @@ An API that can be called to analyse an image of a car and return a description 
   ```sh
   npm i
   ```
-3. Run dev server - requests can be made while running
+3. Run dev server
   ```sh
   npm run dev
   ```
-4. Run tests - sever cannot be running or test must be made on new port
-  ```sh
-  npm test
-  ```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
