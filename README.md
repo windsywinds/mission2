@@ -21,7 +21,7 @@
     <a href="https://github.com/windsywinds/mission2/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="#">No demo available</a>
+    <a href="https://swmission2.netlify.app/">Demo</a>
     ·
     <a href="https://github.com/windsywinds/mission2/issues">Report Bug</a>
     ·
