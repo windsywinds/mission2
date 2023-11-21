@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CarCard from "./components/carCard";
+import { CarCard, MatchCard, DisplayCars } from "./components/carCard";
 
 //Define our variables for Azure access
 const ApiKey = import.meta.env.VITE_API_KEY;
@@ -12,7 +12,7 @@ const errorMessage = {
   fetchError: "There was an error during fetch",
   sorryError: "Sorry, there was an error",
 };
-console.log(errorMessage.noCar);
+
 
 function App() {
   //in React we can use setState to define the state of changing variables
@@ -70,8 +70,6 @@ function App() {
         const parsedData = await response.json();
         //setData so we can now call the resJson as a variable called 'data' as defined in setData useState
         setData(parsedData);
-        //by checking the console we can see the raw json data and structure to make building our html easier
-        console.log(parsedData);
       } catch (error) {
         console.error("There is an error during fetch:", error);
         setDisplayMsg("Sorry, there was an error.", error);
@@ -103,7 +101,8 @@ function App() {
       </div>
 
       {/* Start of results area */}
-      <CarCard image={image} data={data} displayMsg={displayMsg}/>
+      <DisplayCars userImage={image} data={data} displayMsg={displayMsg}/>
+
     </div>
   );
 }
