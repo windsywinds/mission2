@@ -1,0 +1,22 @@
+
+just a list of car urls that can be run through the service!
+urls from cars.usnews.com DO NOT WORK, and there are probably other domains that refuse access
+So this list is a good reference if you find an image not working when you expect it to
+
+
+
+
+Good urls: 
+https://www.toyota.co.nz/globalassets/new-vehicles/camry/2021/camry-zr-axhzr-nm1-axrzr-nm1/clear-cuts/updated-clear-cuts/camry-zr-eclipse.png
+https://d2m3nfprmhqjvd.cloudfront.net/blog/20230421124422/Spinny-Assured-Skoda-Slavia-blue.webp
+https://www.carsized.com/resources/mercedes-benz/a/d/2018/sl_238116108_mercedes-benz-a-2018-side-view_4x.png
+https://www.carsized.com/resources/subaru/legacy/sw/2009/sm_254134151_subaru-legacy-2009-side-view_4x.png
+https://www.carsized.com/resources/toyota/corolla/d-eu/2018/sm_240125142_toyota-corolla-2018-side-view_4x.png
+https://c8.alamy.com/comp/EN0CP7/license-available-at-maximimagescom-2015-chevrolet-bolt-ev-concept-EN0CP7.jpg
+https://www.carsized.com/resources/mitsubishi/mirage/d/2016/sl_250099084_mitsubishi-mirage-2016-side-view_4x.png
+
+
+
+This domain will not allow access. It is not a fault with the app or Azure:
+https://cars.usnews.com/static/images/Auto/izmo/i2320594/2017_subaru_legacy_sideview.jpg
+https://cars.usnews.com/static/images/Auto/izmo/i4574/2014_toyota_corolla_sideview.jpg
