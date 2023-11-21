@@ -8,7 +8,6 @@
 <br />
 <div align="center">
 
-
 <h3 align="center">Mission 2</h3>
 
   <p align="center">
@@ -77,12 +76,12 @@ npm i
 VITE_API_KEY=
 VITE_ENDPOINT_NAME=
 ```
+
 4. Run dev server
 
 ```sh
 npm run dev
 ```
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
