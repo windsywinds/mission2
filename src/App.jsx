@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-//Nils was here(lecture pull request task)
-
 //Define our variables for Azure access
 const ApiKey = import.meta.env.VITE_API_KEY;
 const AzureEndpoint = import.meta.env.VITE_ENDPOINT_NAME;
