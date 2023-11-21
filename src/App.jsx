@@ -13,7 +13,6 @@ const errorMessage = {
   sorryError: "Sorry, there was an error",
 };
 
-
 function App() {
   //in React we can use setState to define the state of changing variables
   const [data, setData] = useState();
@@ -101,12 +100,9 @@ function App() {
       </div>
 
       {/* Start of results area */}
-      <DisplayCars userImage={image} data={data} displayMsg={displayMsg}/>
-
+      <DisplayCars userImage={image} data={data} displayMsg={displayMsg} />
     </div>
   );
 }
 
 export default App;
-
-
