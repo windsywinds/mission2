@@ -88,7 +88,7 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
 
 export const CarCard = ({ inputCar }) => {
   return (
-    <div className="bg-slate-200 rounded-xl text-slate-900 overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
+    <div className="flex bg-slate-200 rounded-xl text-slate-900 overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
       {inputCar.carImage && inputCar && (
         <section className="flex flex-col px-4 py-4 ">
           <img
@@ -110,7 +110,7 @@ export const CarCard = ({ inputCar }) => {
             {inputCar.carColor.charAt(0).toUpperCase() +
               inputCar.carColor.slice(1)}
           </ul>
-          <a href="#" className="text-xs underline">
+          <a href="#" className="text-xs underline mt-auto">
             Tell us more to improve your matches!{" "}
           </a>
         </section>
@@ -132,7 +132,7 @@ export const MatchCard = ({
   }
 
   return (
-    <div className="bg-slate-200 rounded-xl text-slate-900  overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
+    <div className="h-full flex bg-slate-200 rounded-xl text-slate-900  overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
       {imgUrl && (
         <section className="flex flex-col px-4 py-4">
           <img
@@ -153,7 +153,7 @@ export const MatchCard = ({
           <ul className="font-semibold">
             Price: ${carPrice.charAt(0).toUpperCase() + carPrice.slice(1)}
           </ul>
-          <div className="text-xs underline"> 
+          <div className="text-xs underline mt-auto"> 
           {
   inputCar.carColor === carColor && inputCar.carType === carType ? (
     <div>This car has a similar body and color!</div>
