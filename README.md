@@ -11,7 +11,7 @@
 <h3 align="center">Mission 2</h3>
 
   <p align="center">
-    Creating an image recognition API 
+    Creating an image recognition service 
     <br />
     <a href="https://github.com/windsywinds/mission2/"><strong>Explore the docs »</strong></a>
     <br />
@@ -46,7 +46,7 @@
 
 ## About The Project
 
-An API that can be called to analyse an image of a car and return a description of the vehicle.
+A service that can be called to analyse an image of a car and return a description of the vehicle.
 
 ### Built With
 
