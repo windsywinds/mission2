@@ -29,7 +29,7 @@ function App() {
   //when the user clicks the button, we will initiate our call to the API
   //once the data has been fetched, it will setData with the data useState
   const onButtonClick = async (e) => {
-    // e represents the click/event, preventDefault stops the buttons from acting like a default button as we are using it asynchronously
+    //preventDefault stops the buttons from acting like a default button as we are using it asynchronously
     e.preventDefault();
     //return the state of data to void so that if the fetch fails, displayMsg will display using && in html
     setData();
