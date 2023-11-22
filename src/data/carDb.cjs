@@ -72,4 +72,3 @@ export default [
     carPrice: "6,799",
   },
 ];
-

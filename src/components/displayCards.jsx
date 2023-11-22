@@ -153,17 +153,15 @@ export const MatchCard = ({
           <ul className="font-semibold">
             Price: ${carPrice.charAt(0).toUpperCase() + carPrice.slice(1)}
           </ul>
-          <div className="text-xs underline mt-auto"> 
-          {
-  inputCar.carColor === carColor && inputCar.carType === carType ? (
-    <div>This car has a similar body and color!</div>
-  ) : inputCar.carType === carType ? (
-    <div>This car has a similar style!</div>
-  ) : inputCar.carColor === carColor ? (
-    <div>This car has a similar color!</div>
-  ) : null
-}
-</div>          
+          <div className="text-xs underline mt-auto">
+            {inputCar.carColor === carColor && inputCar.carType === carType ? (
+              <div>This car has a similar body and color!</div>
+            ) : inputCar.carType === carType ? (
+              <div>This car has a similar style!</div>
+            ) : inputCar.carColor === carColor ? (
+              <div>This car has a similar color!</div>
+            ) : null}
+          </div>
         </section>
       )}
     </div>
