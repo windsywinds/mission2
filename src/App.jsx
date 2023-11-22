@@ -2,23 +2,24 @@ import { useState } from "react";
 import { DisplayCards } from "./components/displayCards";
 import { DisplayInput } from "./components/displayInput";
 
-
 function App() {
   //We can use setState to define the state of changing variables
   const [data, setData] = useState();
   const [image, setImage] = useState(
     "https://www.toyota.co.nz/globalassets/new-vehicles/camry/2021/camry-zr-axhzr-nm1-axrzr-nm1/clear-cuts/updated-clear-cuts/camry-zr-eclipse.png",
   );
-  const [displayMsg, setDisplayMsg] = useState("Let us find your perfect car by entering an image link!"); //set a display message that can be updated
+  const [displayMsg, setDisplayMsg] = useState(
+    "Let us find your perfect car by entering an image link!",
+  ); //set a display message that can be updated
 
   //Pass these to the children components so that they can be called to update the useStates defined here and passed to other child components
-  const updateData = newData => {
+  const updateData = (newData) => {
     setData(newData);
   };
-  const updateImage = newImage => {
+  const updateImage = (newImage) => {
     setImage(newImage);
   };
-  const updateDisplayMsg = newMsg => {
+  const updateDisplayMsg = (newMsg) => {
     setDisplayMsg(newMsg);
   };
 
@@ -30,7 +31,11 @@ function App() {
         </h1>
       </div>
 
-      <DisplayInput updateData={updateData} updateImage={updateImage} updateDisplayMsg={updateDisplayMsg} />
+      <DisplayInput
+        updateData={updateData}
+        updateImage={updateImage}
+        updateDisplayMsg={updateDisplayMsg}
+      />
 
       {/* Start of results area */}
       <DisplayCards userImage={image} data={data} displayMsg={displayMsg} />
