@@ -80,7 +80,7 @@ export const DisplayCars = ({ userImage, data, displayMsg }) => {
     carColor: tagColor,
   };
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center">
+    <div className="flex items-center justify-center">
       {data && userImage ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-12">
           <CarCard
