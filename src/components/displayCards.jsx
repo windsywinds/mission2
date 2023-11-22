@@ -138,7 +138,7 @@ export const MatchCard = ({
           <img
             src={imgUrl}
             alt={imgUrl}
-            className="w-full h-auto object-cover curser-pointer px-4"
+            className="w-full h-26 object-cover curser-pointer px-4"
           />
 
           <p className="text-xl font-semibold">
@@ -153,6 +153,17 @@ export const MatchCard = ({
           <ul className="font-semibold">
             Price: ${carPrice.charAt(0).toUpperCase() + carPrice.slice(1)}
           </ul>
+          <div className="text-xs underline"> 
+          {
+  inputCar.carColor === carColor && inputCar.carType === carType ? (
+    <div>This car has a similar body and color!</div>
+  ) : inputCar.carType === carType ? (
+    <div>This car has a similar style!</div>
+  ) : inputCar.carColor === carColor ? (
+    <div>This car has a similar color!</div>
+  ) : null
+}
+</div>          
         </section>
       )}
     </div>
