@@ -39,7 +39,7 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
     carColor: tagColor,
   };
 
-  //I want to conditionally render the grid based on how many entries are returned
+  //I want to conditionally render the way carCards are shown in the grid based on how many entries are returned
   const numEntries = carDb?.filter(
     (entry) =>
       entry.carType === inputCar.carType ||
