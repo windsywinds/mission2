@@ -100,7 +100,7 @@ function App() {
       </div>
 
       {/* Start of results area */}
-      <DisplayCards userImage={image} data={data} displayMsg={displayMsg}  />
+      <DisplayCards userImage={image} data={data} displayMsg={displayMsg} />
     </div>
   );
 }
