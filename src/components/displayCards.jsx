@@ -14,7 +14,6 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
   if (!data || !data.tagsResult.values.some((item) => item.name === "car")) {
     return (
       <div>
-        {" "}
         {displayCardsMsg ? (
           <div>{displayCardsMsg}</div>
         ) : (
