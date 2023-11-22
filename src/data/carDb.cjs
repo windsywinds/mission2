@@ -5,6 +5,7 @@ export default [
     carType: "wagon",
     carColor: "white",
     carBrand: "subaru",
+    carPrice: "7999",
   },
   {
     imgUrl:
@@ -12,6 +13,7 @@ export default [
     carType: "sedan",
     carColor: "blue",
     carBrand: "skoda",
+    carPrice: "3799",
   },
   {
     imgUrl:
@@ -19,6 +21,7 @@ export default [
     carType: "sedan",
     carColor: "black",
     carBrand: "toyota",
+    carPrice: "19,999",
   },
   {
     imgUrl:
@@ -26,6 +29,7 @@ export default [
     carType: "sedan",
     carColor: "white",
     carBrand: "toyota",
+    carPrice: "14,899",
   },
   {
     imgUrl:
@@ -33,6 +37,7 @@ export default [
     carType: "hatchback",
     carColor: "gold",
     carBrand: "chevrolet",
+    carPrice: "21,211",
   },
   {
     imgUrl:
@@ -40,5 +45,6 @@ export default [
     carType: "hatchback",
     carColor: "red",
     carBrand: "mitsubishi",
+    carPrice: "8999",
   },
 ];

@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { CarCard, MatchCard, DisplayCars } from "./components/carCard";
+import { DisplayCards } from "./components/displayCards";
 
 //Define our variables for Azure access
 const ApiKey = import.meta.env.VITE_API_KEY;
 const AzureEndpoint = import.meta.env.VITE_ENDPOINT_NAME;
 
 //outline some error messages we can call to display in the log or to the user if needed
-const errorMessage = {
+export const errorMessage = {
   invalidUrl: "Please enter a valid image url!",
   noCar: "No car detected in image.",
   fetchError: "There was an error during fetch",
@@ -100,7 +100,7 @@ function App() {
       </div>
 
       {/* Start of results area */}
-      <DisplayCars userImage={image} data={data} displayMsg={displayMsg} />
+      <DisplayCards userImage={image} data={data} displayMsg={displayMsg}  />
     </div>
   );
 }
