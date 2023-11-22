@@ -7,7 +7,7 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
   const [displayCardsMsg, setDisplayCardsMsg] = useState();
   useEffect(() => {
     if (data && !data.tagsResult.values.some((item) => item.name === "car")) {
-      setDisplayCardsMsg("No car found");
+      setDisplayCardsMsg("Sorry, no car found in image, try another?");
     }
   });
 
@@ -88,7 +88,7 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
 
 export const CarCard = ({ inputCar }) => {
   return (
-    <div className="bg-slate-200 rounded-xl text-slate-900 overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
+    <div className="flex bg-slate-200 rounded-xl text-slate-900 overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
       {inputCar.carImage && inputCar && (
         <section className="flex flex-col px-4 py-4 ">
           <img
@@ -110,8 +110,8 @@ export const CarCard = ({ inputCar }) => {
             {inputCar.carColor.charAt(0).toUpperCase() +
               inputCar.carColor.slice(1)}
           </ul>
-          <a href="#" className="text-xs underline">
-            Let us know more to improve our match!{" "}
+          <a href="#" className="text-xs underline mt-auto">
+            Tell us more to improve your matches!{" "}
           </a>
         </section>
       )}
@@ -132,13 +132,13 @@ export const MatchCard = ({
   }
 
   return (
-    <div className="bg-slate-200 rounded-xl text-slate-900  overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
+    <div className="h-full flex bg-slate-200 rounded-xl text-slate-900  overflow-hidden border-2 border-slate-800 drop-shadow-[0_15px_15px_rgba(0,0,0,0.85)]">
       {imgUrl && (
         <section className="flex flex-col px-4 py-4">
           <img
             src={imgUrl}
             alt={imgUrl}
-            className="w-full h-auto object-cover curser-pointer px-4"
+            className="w-full h-26 object-cover curser-pointer px-4"
           />
 
           <p className="text-xl font-semibold">
@@ -150,9 +150,18 @@ export const MatchCard = ({
           <ul>
             Colour: {carColor.charAt(0).toUpperCase() + carColor.slice(1)}
           </ul>
-          <ul>
+          <ul className="font-semibold">
             Price: ${carPrice.charAt(0).toUpperCase() + carPrice.slice(1)}
           </ul>
+          <div className="text-xs underline mt-auto">
+            {inputCar.carColor === carColor && inputCar.carType === carType ? (
+              <div>This car has a similar body and color!</div>
+            ) : inputCar.carType === carType ? (
+              <div>This car has a similar style!</div>
+            ) : inputCar.carColor === carColor ? (
+              <div>This car has a similar color!</div>
+            ) : null}
+          </div>
         </section>
       )}
     </div>

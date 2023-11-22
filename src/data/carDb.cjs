@@ -9,11 +9,11 @@ export default [
   },
   {
     imgUrl:
-      "https://d2m3nfprmhqjvd.cloudfront.net/blog/20230421124422/Spinny-Assured-Skoda-Slavia-blue.webp",
-    carType: "sedan",
-    carColor: "blue",
-    carBrand: "skoda",
-    carPrice: "3799",
+      "https://www.carsized.com/resources/honda/civic/d/2011/sl_244118112_honda-civic-2011-side-view_4x.png",
+    carType: "hatchback",
+    carColor: "silver",
+    carBrand: "honda",
+    carPrice: "4799",
   },
   {
     imgUrl:
@@ -46,5 +46,29 @@ export default [
     carColor: "red",
     carBrand: "mitsubishi",
     carPrice: "8999",
+  },
+  {
+    imgUrl:
+      "https://www.carsized.com/resources/bmw/3/sw/2019/sl_246106147_bmw-3-2019-side-view_4x.png",
+    carType: "wagon",
+    carColor: "black",
+    carBrand: "bmw",
+    carPrice: "18,999",
+  },
+  {
+    imgUrl:
+      "https://www.carsized.com/resources/ford/focus/d-rs/2013/sl_243121115_ford-focus-2013-side-view_4x.png",
+    carType: "hatchback",
+    carColor: "grey",
+    carBrand: "ford",
+    carPrice: "8,999",
+  },
+  {
+    imgUrl:
+      "https://www.carsized.com/resources/ford/fiesta/d/2008/sl_245115091_ford-fiesta-2008-side-view_4x.png",
+    carType: "hatchback",
+    carColor: "red",
+    carBrand: "ford",
+    carPrice: "6,799",
   },
 ];

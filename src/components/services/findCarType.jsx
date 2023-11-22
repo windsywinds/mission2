@@ -20,32 +20,29 @@ function findCarType(tagNames) {
     "mid-size car",
   ];
 
+  let matchingCar = "unknown";
   try {
     for (const tag of tagNames) {
-      const matchingCar = carTypesFull.find((car) => car === tag);
-
-      if (matchingCar) {
-        if (
-          matchingCar === "luxury car" ||
-          "mid-size car" ||
-          "luxury vehicle" ||
-          "family car"
-        ) {
-          const matchingCar = "sedan";
-          return matchingCar;
-        } else if (matchingCar === "coupe" || "compact") {
-          const matchingCar = "hatchback";
-          return matchingCar;
-        }
-        return matchingCar;
+      const foundCar = carTypesFull.find((car) => car === tag);
+      if (foundCar) {
+        matchingCar = foundCar;
+        break;
+      }
+      if (
+        foundCar === "luxury car" ||
+        foundCar === "mid-size car" ||
+        foundCar === "luxury vehicle" ||
+        foundCar === "family car"
+      ) {
+        matchingCar = "sedan";
+      } else if (foundCar === "coupe" || foundCar === "compact") {
+        matchingCar = "hatchback";
       }
     }
-    // If no match is found set unknown so we can handle logic based on this
-    return "unknown";
   } catch (error) {
     console.error("Error in findCarType:", error);
-    return "unknown";
   }
+  return matchingCar;
 }
 
 export default findCarType;
