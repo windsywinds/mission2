@@ -1,11 +1,25 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import carDb from "../data/carDb.cjs";
 import findCarType from "./services/findCarType"
 import findCarColor from "./services/findCarColour"
 
-export const DisplayCars = ({ userImage, data, displayMsg }) => {
+export const DisplayCards = ({ userImage, data, displayMsg }) => {
+  const [displayCardsMsg, setDisplayCardsMsg] = useState();
+  useEffect(() => {
+    if (data && !data.tagsResult.values.some((item) => item.name === "car")) {
+      setDisplayCardsMsg("No car found");;
+    }
+    
+  })
+  
+  
   if (!data || !data.tagsResult.values.some((item) => item.name === "car")) {
-    return <div>{displayMsg}</div>;
+    return <div> {displayCardsMsg ? (
+              <div>{displayCardsMsg}</div>
+              ) : (
+                <div>{displayMsg}</div>
+                  )}
+            </div>;
   }
 
   //define some of our parsed data to varibales before using it
@@ -27,15 +41,15 @@ export const DisplayCars = ({ userImage, data, displayMsg }) => {
   //I want to conditionally render the grid based on how many entries are returned
   const numEntries = carDb?.filter((entry) => entry.carType === inputCar.carType || entry.carColor === inputCar.carColor).length;
   let gridColumns;
-  if (numEntries === 1) {
+  if (numEntries === 0) {
+    gridColumns = "grid-cols-1 w-1/3 ";
+  } else if(numEntries === 1) {
     gridColumns = "grid-cols-2 w-1/2 ";
   } else if (numEntries === 2) {
     gridColumns = "sm:grid-cols-3 w-2/3";
   } else {
     gridColumns = "lg:grid-cols-4 w-3/4";
   }
-
-
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center ">
@@ -73,12 +87,10 @@ export const CarCard = ({ inputCar }) => {
             className="w-full h-auto object-cover curser-pointer px-4 "
           />
           <p className="text-xl font-semibold">{inputCar.carTitle.charAt(0).toUpperCase() + inputCar.carTitle.slice(1)}</p>
-          <ul>{inputCar.carType.charAt(0).toUpperCase() + inputCar.carType.slice(1)}</ul>
-          <ul>{inputCar.carColor.charAt(0).toUpperCase() + inputCar.carColor.slice(1)}</ul>
-          <a href="#" className="underline">Let us know more to improve our match! </a>
+          <ul>Body Type: {inputCar.carType.charAt(0).toUpperCase() + inputCar.carType.slice(1)}</ul>
+          <ul>Car Colour: {inputCar.carColor.charAt(0).toUpperCase() + inputCar.carColor.slice(1)}</ul>
+          <a href="#" className="text-xs underline">Let us know more to improve our match! </a>
 
-          
-          
         </section>
       )}
     </div>
