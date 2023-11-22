@@ -7,7 +7,7 @@ export const DisplayCards = ({ userImage, data, displayMsg }) => {
   const [displayCardsMsg, setDisplayCardsMsg] = useState();
   useEffect(() => {
     if (data && !data.tagsResult.values.some((item) => item.name === "car")) {
-      setDisplayCardsMsg("No car found");
+      setDisplayCardsMsg("Sorry, no car found in image, try another?");
     }
   });
 
@@ -111,7 +111,7 @@ export const CarCard = ({ inputCar }) => {
               inputCar.carColor.slice(1)}
           </ul>
           <a href="#" className="text-xs underline">
-            Let us know more to improve our match!{" "}
+            Tell us more to improve your matches!{" "}
           </a>
         </section>
       )}
@@ -150,7 +150,7 @@ export const MatchCard = ({
           <ul>
             Colour: {carColor.charAt(0).toUpperCase() + carColor.slice(1)}
           </ul>
-          <ul>
+          <ul className="font-semibold">
             Price: ${carPrice.charAt(0).toUpperCase() + carPrice.slice(1)}
           </ul>
         </section>
