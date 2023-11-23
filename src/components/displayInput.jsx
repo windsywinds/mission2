@@ -6,7 +6,6 @@ export const DisplayInput = ({ updateData, updateImage, updateDisplayMsg }) => {
   const [image, setImage] = useState(
     "https://www.toyota.co.nz/globalassets/new-vehicles/camry/2021/camry-zr-axhzr-nm1-axrzr-nm1/clear-cuts/updated-clear-cuts/camry-zr-eclipse.png",
   );
-  const [displayMsg, setDisplayMsg] = useState("Enter a url and click run!"); //set a display message that can be updated
 
   //we  want to ensure we manage the user changing the input field so this will update the image useState
   const handleOnChange = (e) => {
