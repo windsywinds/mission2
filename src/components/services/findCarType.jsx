@@ -24,7 +24,7 @@ function findCarType(tagNames) {
   let matchingCar = "unknown";
   try {
     for (const tag of tagNames) {
-      const foundCar = carTypesFull.find((car) => car === tag.name);
+      const foundCar = carTypesFull.find((car) => car === tag);
       if (foundCar) {
         matchingCar = foundCar;
         console.log(matchingCar)
