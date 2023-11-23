@@ -119,3 +119,34 @@ npm run dev
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com
+
+ CODE REVIEW - By Prasanthy
+ App.jsx-----
+
+Code is well organized. But can make it even better.
+It is better to use typescript.
+Can add some more error handling methods
+Consider adding unit tests or integration tests for critical parts of your application .
+It is better to make it responsive
+
+displayCards.jsx-----
+
+Ensure that you don't have any unused imports, as this can clutter your code. For example, if you are not using the useState from the react import, you can remove it.
+
+Double-check the naming consistency. For example, you use both carColor and carColour in your code. Stick to a consistent naming convention.
+
+displayInput.jsx-----
+
+Add proper error handling for the image format check and the API call. You've already added a console error, but you might want to consider updating the display message as well.
+
+Consider updating the loading message before making the API call. This provides more immediate feedback to the user.
+Value of displayMsg is never read.
+
+
+I is better to follow some naming conventions(like filename-PascalCase etc)
+
+
+These only somes uggestions. You have a well organized code with great functionalities .
+
+
+
