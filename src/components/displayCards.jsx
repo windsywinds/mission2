@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import carDb from "../data/carDb.cjs";
 import findCarType from "./services/findCarType";
-import findCarColor from "./services/findCarColour";
+import findCarColor from "./services/findCarColor";
 
 export const DisplayCards = ({ userImage, data, displayMsg }) => {
   const [displayCardsMsg, setDisplayCardsMsg] = useState();
